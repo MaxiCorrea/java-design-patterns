@@ -33,7 +33,7 @@ Usaremos el patrón Abstract Factory cuando
 
 ## Colaboraciones
 
-• Normalmente, se crea una sola instancia de una clase ConcreteFactory en tiempo de ejecución. Esta fábrica concreta crea objetos de productos que tienen una implementación particular. Para crear diferentes objetos de producto, los clientes deben usar una fábrica de concreta diferente.
+• Normalmente, se crea una sola instancia de una clase ConcreteFactory en tiempo de ejecución. Esta fábrica concreta crea objetos de productos que tienen una implementación particular. Para crear diferentes objetos de producto, los clientes deben usar una fábrica concreta diferente.
 
 • AbstractFactory difiere la creación de objetos de producto a su subclase ConcreteFactory.
 
