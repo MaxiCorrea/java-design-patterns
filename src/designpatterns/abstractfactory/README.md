@@ -43,7 +43,7 @@ El patrón Abstract Factory tiene los siguientes beneficios y responsabilidades:
 
 1. Aísla las clases concretas. El patrón Abstract Factory lo ayuda a controlar las clases de objetos que crea una aplicación. Debido a que una fábrica encapsula la responsabilidad y el proceso de creación de objetos de producto, aísla a los clientes de las clases de implementación. Los clientes manipulan instancias a través de sus interfaces abstractas. Los nombres de clase de producto están aislados en la implementación de la fábrica concreta; no aparecen en el código del cliente.
 
-2. Facilita el intercambio de familias de productos. La clase de una fábrica concreta aparece solo una vez en una aplicación, es decir, donde se crea una instancia. Esto facilita cambiar la fábrica de concreto que utiliza una aplicación. Puede usar diferentes configuraciones de producto simplemente cambiando la fábrica concreta. Debido a que una fábrica abstracta crea una familia completa de productos, toda la familia de productos cambia a la vez.
+2. Facilita el intercambio de familias de productos. La clase de una fábrica concreta aparece solo una vez en una aplicación, es decir, donde se crea una instancia. Esto facilita cambiar la fábrica concreta que utiliza una aplicación. Puede usar diferentes configuraciones de producto simplemente cambiando la fábrica concreta. Debido a que una fábrica abstracta crea una familia completa de productos, toda la familia de productos cambia a la vez.
 
 3. Promueve la coherencia entre los productos. Cuando los objetos del producto en una familia están diseñados para funcionar juntos, es importante que una aplicación use objetos de una sola familia a la vez. AbstractFactory hace esto fácil de hacer cumplir.
 
