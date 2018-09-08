@@ -3,6 +3,10 @@ package designpatterns.abstractfactory.pizzaingredients.city.chicago;
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
+import designpatterns.abstractfactory.pizzaingredients.city.Cheese;
+import designpatterns.abstractfactory.pizzaingredients.city.Dough;
+import designpatterns.abstractfactory.pizzaingredients.city.Pepperon;
+import designpatterns.abstractfactory.pizzaingredients.city.Sauce;
 
 public class NewYorkPizzaIngredientsFactoryTest {
 
@@ -15,22 +19,30 @@ public class NewYorkPizzaIngredientsFactoryTest {
 
   @Test
   public void testCreateCheese() {
-    assertNotNull(factory.createCheese());
+    Cheese cheese = factory.createCheese();
+    assertNotNull(cheese);
+    assertTrue(cheese instanceof ReggianoCheese);
   }
 
   @Test
   public void testCreateDough() {
-    assertNotNull(factory.createDough());
+    Dough dough = factory.createDough();
+    assertNotNull(dough);
+    assertTrue(dough instanceof ThinCrustDough);
   }
 
   @Test
   public void testCreatePepperon() {
-    assertNotNull(factory.createPepperon());
+    Pepperon pepperon = factory.createPepperon();
+    assertNotNull(pepperon);
+    assertTrue(pepperon instanceof NewYorkPepperon);
   }
 
   @Test
   public void testCreateSauce() {
-    assertNotNull(factory.createSauce());
+    Sauce sauce = factory.createSauce();
+    assertNotNull(sauce);
+    assertTrue(sauce instanceof Sauce);
   }
 
   @Test
