@@ -7,6 +7,7 @@ import designpatterns.abstractfactory.pizzaingredients.city.Cheese;
 import designpatterns.abstractfactory.pizzaingredients.city.Dough;
 import designpatterns.abstractfactory.pizzaingredients.city.Pepperon;
 import designpatterns.abstractfactory.pizzaingredients.city.Sauce;
+import designpatterns.abstractfactory.pizzaingredients.city.Veggies;
 
 public class NewYorkPizzaIngredientsFactoryTest {
 
@@ -42,12 +43,14 @@ public class NewYorkPizzaIngredientsFactoryTest {
   public void testCreateSauce() {
     Sauce sauce = factory.createSauce();
     assertNotNull(sauce);
-    assertTrue(sauce instanceof Sauce);
+    assertTrue(sauce instanceof MarinaraSauce);
   }
 
   @Test
   public void testCreateVeggies() {
-    assertNotNull(factory.createVeggies());
+    Veggies[] veggies = factory.createVeggies();
+    assertNotNull(veggies);
+    assertTrue(veggies[0] instanceof NewYorkVeggies);
   }
 
 }
