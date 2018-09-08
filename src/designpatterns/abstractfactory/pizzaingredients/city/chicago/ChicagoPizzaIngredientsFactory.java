@@ -7,31 +7,31 @@ import designpatterns.abstractfactory.pizzaingredients.city.PizzaIngredientsFact
 import designpatterns.abstractfactory.pizzaingredients.city.Sauce;
 import designpatterns.abstractfactory.pizzaingredients.city.Veggies;
 
-public class NewYorkPizzaIngredientsFactory implements PizzaIngredientsFactory {
+public class ChicagoPizzaIngredientsFactory implements PizzaIngredientsFactory {
 
   @Override
   public Cheese createCheese() {
-    return new ReggianoCheese();
+    return new MozzarellaCheese();
   }
 
   @Override
   public Dough createDough() {
-    return new ThinCrustDough();
+    return new ThickCrustDough();
   }
 
   @Override
   public Pepperon createPepperon() {
-    return new NewYorkPepperon();
+    return new ChicagoPepperon();
   }
 
   @Override
   public Sauce createSauce() {
-    return new MarinaraSauce();
+    return new PlumTomatoSauce();
   }
 
   @Override
   public Veggies[] createVeggies() {
-    return new Veggies[] {new NewYorkVeggies()};
+    return new Veggies[] {new ChicagoVeggies()};
   }
 
 }

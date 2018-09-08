@@ -1,4 +1,4 @@
-package designpatterns.abstractfactory.pizzaingredients.city.chicago;
+package designpatterns.abstractfactory.pizzaingredients.city.newyork;
 
 import designpatterns.abstractfactory.pizzaingredients.city.Pepperon;
 
