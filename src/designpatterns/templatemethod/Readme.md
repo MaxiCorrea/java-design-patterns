@@ -6,7 +6,7 @@ Defina el esqueleto de un algoritmo en una operación, difiriendo algunos pasos 
 
 ## Aplicabilidad
 
-El patrón de Template Method debe ser utilizado cuando.
+Usaremos el patron Template Method cuando.
 
 • Queremos implementar las partes invariables de un algoritmo una vez y dejarlo en manos
 subclases para implementar el comportamiento que puede variar.
