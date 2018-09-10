@@ -1,4 +1,3 @@
-## Diagrama de Clases
 
 ![screenshot from 2018-09-06 10 09 07](https://user-images.githubusercontent.com/34853850/45159706-e8f36280-b1bd-11e8-8497-730d78bd451f.png)
 
