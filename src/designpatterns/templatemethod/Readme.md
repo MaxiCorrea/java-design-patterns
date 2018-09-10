@@ -16,3 +16,7 @@ subclases para implementar el comportamiento que puede variar.
 • Queremos controlar extensiones de subclases. Podemos definir un método de plantilla que llame
 operaciones de "enlace" en puntos específicos, permitiendo de ese modo
 extensiones solo en esos puntos.
+
+## Estructura
+
+![screenshot from 2018-09-10 14 12 15](https://user-images.githubusercontent.com/34853850/45313161-6f80aa80-b504-11e8-8c37-155b3a203802.png)
