@@ -1,4 +1,4 @@
-## Template Method
+# Template Method
 
 ### Intención.
 
