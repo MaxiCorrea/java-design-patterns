@@ -12,7 +12,7 @@ public class DatabaseLogger extends AbstractLogger {
   }
 
   @Override
-  void LogMessage(String messageToLog) {
+  void logMessage(String messageToLog) {
     
   }
 

@@ -16,10 +16,10 @@ public abstract class AbstractLogger {
     this.consoleLogging = consoleLogging;
   }
 
-  public final void Log(Object message) {
+  public final void log(Object message) {
     String messageToLog = serializeMessage(message);
     openDataStoreOperation();
-    LogMessage(messageToLog);
+    logMessage(messageToLog);
     closeDataStoreOperation();
     if (consoleLogging) {
       logToConsole(messageToLog);
@@ -28,7 +28,7 @@ public abstract class AbstractLogger {
 
   abstract void openDataStoreOperation();
 
-  abstract void LogMessage(String messageToLog);
+  abstract void logMessage(String messageToLog);
 
   abstract void closeDataStoreOperation();
 

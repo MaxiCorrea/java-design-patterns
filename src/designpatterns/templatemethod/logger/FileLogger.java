@@ -12,7 +12,7 @@ public class FileLogger extends AbstractLogger {
   }
 
   @Override
-  void LogMessage(String messageToLog) {
+  void logMessage(String messageToLog) {
 
   }
 
