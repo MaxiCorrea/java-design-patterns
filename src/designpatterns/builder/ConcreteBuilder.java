@@ -18,8 +18,7 @@ public class ConcreteBuilder extends Builder {
     product.setPart2("The Part2");
   }
 
-  @Override
-  Product build() {
+  Product getProduct() {
     return product;
   }
   
