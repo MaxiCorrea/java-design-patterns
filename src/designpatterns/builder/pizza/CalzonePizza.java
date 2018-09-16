@@ -1,10 +1,10 @@
 package designpatterns.builder.pizza;
 
-public class CalzonePizza extends Pizza {
+public class CalzonePizza extends AbstractPizza {
 
   private boolean anyBoolean;
 
-  private CalzonePizza(Builder builder) {
+  private CalzonePizza(CalzoneBuilder builder) {
     super(builder);
     this.anyBoolean = builder.anyBoolean;
   }
@@ -13,21 +13,21 @@ public class CalzonePizza extends Pizza {
     return anyBoolean;
   }
 
-  static class Builder extends Pizza.Builder<Builder> {
+  static class CalzoneBuilder extends AbstractPizza.AbstractBuilder<CalzoneBuilder> {
 
     private boolean anyBoolean;
 
-    Builder() {
+    CalzoneBuilder() {
       anyBoolean = false;
     }
 
-    final Builder anyBooleanTrue() {
+    final CalzoneBuilder anyBooleanTrue() {
       anyBoolean = true;
       return self();
     }
 
     @Override
-    Builder self() {
+    CalzoneBuilder self() {
       return this;
     }
 

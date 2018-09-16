@@ -3,11 +3,11 @@ package designpatterns.builder.pizza;
 import java.util.EnumSet;
 import java.util.Set;
 
-public abstract class Pizza {
+public abstract class AbstractPizza {
 
   private Set<Topping> toppings;
 
-  Pizza(Builder<?> builder) {
+  AbstractPizza(AbstractBuilder<?> builder) {
     toppings = builder.toppings.clone();
   }
 
@@ -15,11 +15,11 @@ public abstract class Pizza {
     return toppings;
   }
 
-  static abstract class Builder<T> {
+  static abstract class AbstractBuilder<T> {
 
     private EnumSet<Topping> toppings;
 
-    Builder() {
+    AbstractBuilder() {
       toppings = EnumSet.noneOf(Topping.class);
     }
 
@@ -30,7 +30,7 @@ public abstract class Pizza {
 
     abstract T self();
 
-    abstract Pizza build();
+    abstract AbstractPizza build();
 
   }
 

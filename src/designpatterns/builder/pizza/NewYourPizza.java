@@ -1,10 +1,10 @@
 package designpatterns.builder.pizza;
 
-public class NewYourPizza extends Pizza {
+public class NewYourPizza extends AbstractPizza {
 
   private Size size;
 
-  private NewYourPizza(Builder builder) {
+  private NewYourPizza(NewYourBuilder builder) {
     super(builder);
     size = builder.size;
   }
@@ -13,16 +13,16 @@ public class NewYourPizza extends Pizza {
     return size;
   }
 
-  static class Builder extends Pizza.Builder<Builder> {
+  static class NewYourBuilder extends AbstractPizza.AbstractBuilder<NewYourBuilder> {
 
     private Size size;
 
-    Builder(Size size) {
+    NewYourBuilder(Size size) {
       this.size = size;
     }
 
     @Override
-    Builder self() {
+    NewYourBuilder self() {
       return this;
     }
 
