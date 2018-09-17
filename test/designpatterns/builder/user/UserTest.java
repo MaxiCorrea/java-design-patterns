@@ -16,7 +16,7 @@ public class UserTest {
                     withState("Moreno").
                     isFemale(false).
                     isEmployed(false).
-                    isHomewOwner(false).
+                    isHomeOwner(false).
                     build();
     
     assertEquals("Correa" , user.getFirstName());

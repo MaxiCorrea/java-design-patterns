@@ -12,7 +12,7 @@ public class User {
   private final String state;
   private final boolean isFemale;
   private final boolean isEmployed;
-  private final boolean isHomewOwner;
+  private final boolean isHomeOwner;
 
   private User(Builder builder) {
     this.lastName = builder.lastName;
@@ -25,7 +25,7 @@ public class User {
     this.state = builder.state;
     this.isFemale = builder.isFemale;
     this.isEmployed = builder.isEmployed;
-    this.isHomewOwner = builder.isHomewOwner;
+    this.isHomeOwner = builder.isHomeOwner;
   }
 
   public String getLastName() {
@@ -69,7 +69,7 @@ public class User {
   }
 
   public boolean isHomewOwner() {
-    return isHomewOwner;
+    return isHomeOwner;
   }
 
   public static class Builder {
@@ -84,7 +84,7 @@ public class User {
     private String state;
     private boolean isFemale;
     private boolean isEmployed;
-    private boolean isHomewOwner;
+    private boolean isHomeOwner;
 
     public Builder(String lastName, String firstName) {
       this.lastName = lastName;
@@ -131,8 +131,8 @@ public class User {
       return this;
     }
 
-    public Builder isHomewOwner(boolean isHomewOwner) {
-      this.isHomewOwner = isHomewOwner;
+    public Builder isHomeOwner(boolean isHomewOwner) {
+      this.isHomeOwner = isHomewOwner;
       return this;
     }
 
