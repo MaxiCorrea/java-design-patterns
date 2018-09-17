@@ -3,10 +3,10 @@ package designpatterns.factorymethod;
 abstract class AbstractCreator {
 
   void anOperation() {
-    AbstractProduct product = create();
+    AbstractProduct product = factoryMethod();
     product.operation();
   }
   
-  abstract AbstractProduct create();
+  abstract AbstractProduct factoryMethod();
   
 }

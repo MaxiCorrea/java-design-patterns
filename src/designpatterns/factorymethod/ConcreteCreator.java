@@ -3,7 +3,7 @@ package designpatterns.factorymethod;
 class ConcreteCreator extends AbstractCreator {
 
   @Override
-  AbstractProduct create() {
+  AbstractProduct factoryMethod() {
     return new ConcreteProduct();
   }
 

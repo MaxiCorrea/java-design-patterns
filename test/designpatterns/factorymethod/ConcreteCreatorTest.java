@@ -8,8 +8,8 @@ public class ConcreteCreatorTest {
   @Test
   public void shouldCreateAnInstanceOfTheConcreteProductClass() {
     ConcreteCreator concreteCreator = new ConcreteCreator();
-    assertNotNull(concreteCreator.create());
-    assertTrue(concreteCreator.create() instanceof ConcreteProduct);
+    assertNotNull(concreteCreator.factoryMethod());
+    assertTrue(concreteCreator.factoryMethod() instanceof ConcreteProduct);
   }
 
 }

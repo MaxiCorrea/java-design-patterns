@@ -30,7 +30,7 @@ public class AbstractCreatorTest {
   private class CreatorTestable extends AbstractCreator {
 
     @Override
-    AbstractProduct create() {
+    AbstractProduct factoryMethod() {
       createMethodCalled = true;
       return aProduct;
     }
