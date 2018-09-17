@@ -1,5 +1,5 @@
 package designpatterns.abstractfactory;
 
-class AbstractProductB {
+abstract class AbstractProductB {
 
 }
