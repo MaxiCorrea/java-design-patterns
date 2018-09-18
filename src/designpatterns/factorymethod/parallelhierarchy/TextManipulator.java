@@ -1,6 +1,6 @@
-package designpatterns.factorymethod.figures;
+package designpatterns.factorymethod.parallelhierarchy;
 
-public class LineManipulator extends AbstractManipulator {
+public class TextManipulator extends AbstractManipulator {
 
   @Override
   void downClick() {

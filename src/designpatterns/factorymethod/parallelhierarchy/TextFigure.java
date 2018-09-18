@@ -1,4 +1,4 @@
-package designpatterns.factorymethod.figures;
+package designpatterns.factorymethod.parallelhierarchy;
 
 public class TextFigure extends AbstractFigure {
 

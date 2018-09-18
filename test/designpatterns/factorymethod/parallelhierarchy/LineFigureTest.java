@@ -1,7 +1,10 @@
-package designpatterns.factorymethod.figures;
+package designpatterns.factorymethod.parallelhierarchy;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
+import designpatterns.factorymethod.parallelhierarchy.AbstractManipulator;
+import designpatterns.factorymethod.parallelhierarchy.LineFigure;
+import designpatterns.factorymethod.parallelhierarchy.LineManipulator;
 
 public class LineFigureTest {
 
