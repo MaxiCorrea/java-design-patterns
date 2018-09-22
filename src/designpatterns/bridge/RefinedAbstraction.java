@@ -6,9 +6,4 @@ public class RefinedAbstraction extends Abstraction {
     super(implementor);
   }
 
-  @Override
-  public void operation() {
-    
-  }
-
 }
