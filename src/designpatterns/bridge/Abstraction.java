@@ -2,6 +2,14 @@ package designpatterns.bridge;
 
 public abstract class Abstraction {
 
-  public abstract void operation();
-  
+  private Implementor implementor;
+
+  public Abstraction(Implementor implementor) {
+    this.implementor = implementor;
+  }
+
+  public void operation() {
+    implementor.operationImpl();
+  }
+
 }
