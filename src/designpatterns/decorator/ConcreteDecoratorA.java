@@ -9,7 +9,7 @@ public class ConcreteDecoratorA extends Decorator {
   @Override
   public void operation() {
     System.out.println("<------------>");
-    System.out.println("_" + getDecorated() + "_");
+    getDecorated().operation();
     System.out.println("<------------>");
   }
 
