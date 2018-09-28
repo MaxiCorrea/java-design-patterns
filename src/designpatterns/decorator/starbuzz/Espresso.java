@@ -1,8 +1,8 @@
 package designpatterns.decorator.starbuzz;
 
-public class Expresso extends Beverage {
+public class Espresso extends Beverage {
 
-  public Expresso() {
+  public Espresso() {
     super("Espresso");
   }
   
