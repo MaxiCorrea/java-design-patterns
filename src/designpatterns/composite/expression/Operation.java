@@ -1,5 +1,7 @@
 package designpatterns.composite.expression;
 
+import static java.lang.String.format;
+
 public abstract class Operation extends Expression {
 
   private final Expression expression1;
@@ -19,5 +21,10 @@ public abstract class Operation extends Expression {
   }
 
   public abstract String operationString();
+
+  @Override
+  public String toString() {
+    return format("(%s%s%s)", expression1, operationString(), expression2);
+  }
 
 }

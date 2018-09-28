@@ -8,12 +8,12 @@ public class Multiplication extends Operation {
 
   @Override
   public String operationString() {
-    return "/";
+    return "*";
   }
 
   @Override
   public int operate() {
-    return getExpression1().operate() / getExpression2().operate();
+    return getExpression1().operate() * getExpression2().operate();
   }
 
 }
