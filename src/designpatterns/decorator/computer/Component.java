@@ -4,6 +4,10 @@ public abstract class Component {
 
   private String description;
   
+  public Component() {
+    this("");
+  }
+  
   public Component(String description) {
     this.description = description;
   }
