@@ -19,7 +19,7 @@ public class FlyweightFactory {
 
     if ("ConcreteFlyweight".equals(key)) {
       flyweight = new ConcreteFlyweight();
-    } else if (key.equals("UnsharedConcreteFlyweiht")) {
+    } else if (key.equals("UnsharedConcreteFlyweight")) {
       flyweight = new UnsharedConcreteFlyweight();
     } else {
       throw new IllegalArgumentException("Invalid key : " + key);
