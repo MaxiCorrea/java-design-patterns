@@ -13,20 +13,15 @@ public class FlyweightFactory {
 
   public Flyweight getFlyweight(String key) {
     Flyweight flyweight = pool.get(key);
-    if (flyweight != null) {
-      return flyweight;
-    }
-
-    if ("ConcreteFlyweight".equals(key)) {
+    if (flyweight == null) {
       flyweight = new ConcreteFlyweight();
-    } else if (key.equals("UnsharedConcreteFlyweight")) {
-      flyweight = new UnsharedConcreteFlyweight();
-    } else {
-      throw new IllegalArgumentException("Invalid key : " + key);
+      pool.put(key, flyweight);
     }
-    
-    pool.put(key, flyweight);
     return flyweight;
+  }
+
+  public Flyweight createUnsharedConcreteFlyweight() {
+    return new UnsharedConcreteFlyweight();
   }
 
 }

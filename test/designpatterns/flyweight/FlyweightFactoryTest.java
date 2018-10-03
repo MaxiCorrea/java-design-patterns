@@ -8,17 +8,21 @@ public class FlyweightFactoryTest {
   @Test
   public void testGetFlyweight() {
     FlyweightFactory factory = new FlyweightFactory();
-    Flyweight flyweight1 = factory.getFlyweight("ConcreteFlyweight");
+    Flyweight flyweight1 = factory.getFlyweight("X");
     assertNotNull(flyweight1);
-    Flyweight flyweight2 = factory.getFlyweight("ConcreteFlyweight");
+    Flyweight flyweight2 = factory.getFlyweight("X");
     assertNotNull(flyweight2);
     assertSame(flyweight1, flyweight2);
-    
-    Flyweight flyweight3 = factory.getFlyweight("UnsharedConcreteFlyweight");
+  }
+  
+  @Test
+  public void testUnshared() {
+    FlyweightFactory factory = new FlyweightFactory();
+    Flyweight flyweight3 = factory.createUnsharedConcreteFlyweight();
     assertNotNull(flyweight3);
-    Flyweight flyweight4 = factory.getFlyweight("UnsharedConcreteFlyweight");
+    Flyweight flyweight4 = factory.createUnsharedConcreteFlyweight();
     assertNotNull(flyweight4);
-    assertSame(flyweight3, flyweight4);
+    assertNotSame(flyweight3, flyweight4);
   }
 
 }
