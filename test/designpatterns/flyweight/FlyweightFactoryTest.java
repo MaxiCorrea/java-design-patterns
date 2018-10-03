@@ -6,7 +6,7 @@ import org.junit.Test;
 public class FlyweightFactoryTest {
 
   @Test
-  public void testGetFlyweight() {
+  public void testShared() {
     FlyweightFactory factory = new FlyweightFactory();
     Flyweight flyweight1 = factory.getFlyweight("X");
     assertNotNull(flyweight1);
