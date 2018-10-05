@@ -1,4 +1,4 @@
-package designpatterns.proxy.caching;
+package designpatterns.proxy.cache;
 
 public class Video {
 

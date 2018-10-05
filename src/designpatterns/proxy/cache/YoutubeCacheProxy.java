@@ -1,4 +1,4 @@
-package designpatterns.proxy.caching;
+package designpatterns.proxy.cache;
 
 import java.util.HashMap;
 import java.util.Map;
