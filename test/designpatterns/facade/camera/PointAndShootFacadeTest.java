@@ -22,7 +22,7 @@ public class PointAndShootFacadeTest {
   public void testTakePicture() {
     PointAndShootFacade facade = new PointAndShootFacade();
     facade.takePicture();
-    String expected = "Open shutter for 0.017 seconds";
+    String expected = "Open shutter for 0,017 seconds";
     assertEquals(expected, String.valueOf(output).trim());
   }
 
