@@ -23,7 +23,7 @@
 		<!-- Maven. Test de Integración -->
 		<maven.failsafe.version>2.19.1</maven.failsafe.version>
 		<!-- Pruebas -->
-		<junit.version>4.11</junit.version>
+		<junit.version>4.13.1</junit.version>
 		<!-- Logs -->
 		<log4j.version>2.13.2</log4j.version>
 		<!-- Data Base -->
